@@ -1,58 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="icon.ico">
-    <title>Sign My Petition</title>
-    <style>
-        body {
-            background-color: #1c1c1c;
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .capsule-img {
-            display: block;
-        }
-        .image-container {
-            list-style: none;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            justify-content: center;
-            align-items: center;
-        }
-        .image {
-            max-width: 768px;
-            height: auto;
-            margin: 30px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 30px rgba(25, 118, 210, 0.3);
-        }
-    </style>
-    <!-- Vertical capsule image -->
-    <img src="website-capsule.png" alt="Sign My Petition Capsule Art" class="capsule-img">
-    <body>
-        <div style="color: white; text-align: center; font-family: Arial, sans-serif; max-width: 800px; margin: 20px;">
-            Studio 9Bs presents - 
-            Loony hijinks, story-driven brawling, mice, mayhem, and martial arts.
-        </div>
-        <ul class="image-container">
-            <li><iframe width="768" height="432" src="https://www.youtube.com/embed/CnYjFbiKTRs?si=RWK9qshiy-zMYZFi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
-            <li><img src="image_1.png" alt="Boe's Kitchen" class="image"></li>
-            <li><img src="image_3.png" alt="Boe's Kitchen" class="image"></li>
-            <li><img src="image_5.png" alt="Boe's Kitchen" class="image"></li>
-            <li><img src="image_6.png" alt="Boe's Kitchen" class="image"></li>
-            <li><img src="image_7.png" alt="Boe's Kitchen" class="image"></li>
-            <li><img src="image_8.png" alt="Boe's Kitchen" class="image"></li>
-            <li><img src="image_10.png" alt="Boe's Kitchen" class="image"></li>
-            
-    </body>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="icon.ico">
+  <title>Sign My Petition</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 120px;
+      background-color: #111;
+      padding: 20px;
+      box-shadow: 4px 0 10px rgba(0,0,0,0.4);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #1976d2;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 140px; /* space for sidebar */
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .capsule-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .intro-text {
+      color: white;
+      text-align: center;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: white;
+      text-align: left;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+
+    .image-container {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image {
+      max-width: 768px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0px 0px 30px rgba(25, 118, 210, 0.3);
+    }
+
+    .studio-logo img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    section {
+      padding-top: 80px; /* offset for anchor scroll */
+      margin-top: -80px;
+    }
+  </style>
 </head>
 <body>
+
+  <nav class="sidebar">
+    <a href="#top">Top</a>
+    <a href="#trailer">Trailer</a>
+    <a href="#description">Game Description</a>
+    <a href="#screenshots">Screenshots</a> 
+    <a href="signmypetition_screenshots.zip">Download Screenshot zip</a>
+    <a href="signmypetition_branding.zip">Download Branding zip</a>
+    <a href="#team">About The Team</a>
+  </nav>
+
+  <div class="main">
+    <section id="top">
+      <img src="website-capsule.png" alt="Sign My Petition Capsule Art" class="capsule-img">
+      <div class="intro-text">
+        Studio 9Bs presents - Loony hijinks, story-driven brawling, mice, mayhem, and martial arts.
+      </div>
+    </section>
+
+    <section id="trailer">
+      <ul class="image-container">
+        <li>
+          <iframe width="768" height="432"
+            src="https://www.youtube.com/embed/CnYjFbiKTRs?si=RWK9qshiy-zMYZFi"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </li>
+      </ul>
+    </section>
+
+    <section id="description">
+        <div class="description">
+            When his sick human friend Boe faces eviction and the mice of his tribe are threatened with extermination, one tiny hero rises to stop it all. As the Chosen One, you’ll brawl your way through a crumbling apartment building overrun by bumbling mice, scheming ants, and increasingly ridiculous money-making plots. Each apartment is a new fight, a new tenant to convince, and another signature to collect. Punch bugs, take on oddball quests, and lead the most peculiar, and misguided revolution this building’s ever seen.
+            <br>
+            <br>
+            <br>
+            <h2>Key Features</h2>
+
+            <h3>Story-Driven Brawling </h3>
+            Throw tiny fists in big fights across apartments filled with ants, beetles, and other weirdos.
+
+            <h3>Apartment-Scale Adventure </h3>
+             Each unit is its own world complete with tenants, side quests, secrets, and signature-worthy struggles.
+
+            <h3>A Revolution in Petitions </h3>
+            Collect signatures from reluctant neighbors in your quest to stop an exterminator and maybe save your sick best friend.
+
+            <h3>Light RPG Mechanics </h3>
+            Choose your attacks, complete quests, and lead the Chosen One on a path through bugs and bureaucracy.
+
+            <h3>Satirical World, Sincere Heart </h3>
+            A tale of friendship, resistance, and dumb ideas with a surprising amount of emotional punch.
+
+            <h3>Bugs With Agendas </h3>
+            Uncover a hidden network of ant-run schemes, shady businesses, and strange operations all part of a larger scheme buried just beneath the floorboards.
+         </div>
+    </section>
+
+    <section id="screenshots">
+      <ul class="image-container">
+        <li><img src="image_1.png" alt="The Vents" class="image"></li>
+        <li><img src="image_3.png" alt="Joe's Records" class="image"></li>
+        <li><img src="image_5.png" alt="Boe's Kitchen" class="image"></li>
+        <li><img src="image_6.png" alt="Hole In The Wall" class="image"></li>
+        <li><img src="image_7.png" alt="Foyer Rescue" class="image"></li>
+        <li><img src="image_8.png" alt="Formicary Fight" class="image"></li>
+        <li><img src="image_10.png" alt="MtCouchspire Bullies" class="image"></li>
+      </ul>
+    </section>
+  
+    <section id="team">
+        <div class="description">
+            Studio 9Bs is a small team based in the United States.
+        </div>
+        <div class="studio-logo">
+            <img src="studio.png" alt="9Bs Studio" class="image">
+        </div>
+    </section>
+
+  </div>
+
 </body>
 </html>
